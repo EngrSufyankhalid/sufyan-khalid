@@ -1,6 +1,4 @@
-Bhai, ye raha bilkul saaf TEXT format mein code. Is mein koi extra brackets ya Markdown ki galti nahi hai. Is mein aapki image, navigation header, contact form, aur projects section sab kuch shamil hai.
 
-Bas is poore text ko copy karein aur apni src/App.jsx mein paste kar den:
 
 import React, { useState } from 'react';
 
