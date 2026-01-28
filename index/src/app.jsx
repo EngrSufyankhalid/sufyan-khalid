@@ -1,143 +1,133 @@
-import React from "react";
+import React from 'react';
 
-export default function Home() {
-  return (
-    <main style={{
-      minHeight: "100vh",
-      background: "linear-gradient(180deg, #0f172a, #020617)",
-      color: "#e5e7eb",
-      fontFamily: "system-ui, -apple-system, sans-serif",
-      padding: "60px 20px",
-    }}>
-      <section style={{ maxWidth: "900px", margin: "0 auto" }}>
-        {/* Header */}
-        <header style={{ textAlign: "center", marginBottom: "60px" }}>
-          <h1 style={{ fontSize: "48px", margin: 0 }}>Sufyan Khalid</h1>
-          <p style={{ color: "#93c5fd", marginTop: "10px", fontSize: "18px" }}>
-            Senior Software QA Engineer • M.Sc. AI Student
-          </p>
-        </header>
+export default function App() { return ( <div style={containerStyle}> <div style={contentWrapper}>
 
-        {/* Professional Profile */}
-        <section style={{ marginBottom: "50px" }}>
-          <h2 style={sectionTitle}>Professional Profile</h2>
-          <p style={paragraph}>
-            Result-driven Senior QA Engineer with 5+ years of experience in test
-            automation and collaborative bug resolution. Proven track record in
-            reducing manual testing time and expanding test coverage, and
-            currently specializing in Artificial Intelligence to bridge the gap
-            between traditional QA and AI-driven automation.
-          </p>
-        </section>
-
-        {/* Experience */}
-        <section style={{ marginBottom: "50px" }}>
-          <h2 style={sectionTitle}>Professional Experience</h2>
-
-          <Experience
-            role="Senior Software Quality Assurance Engineer"
-            company="Bykea Technologies, Karachi, PK"
-            duration="10/2021 – 12/2025"
-            points={[
-              "Spearheaded testing for Car Pool feature and 20+ major launches (Fintech, Logistics, Bidding).",
-              "Reduced feature shipping time by 50% via CI/CD pipelines.",
-              "Increased test coverage by 40% and product stability by 80%.",
-              "Led QA standards across cross-functional teams.",
-            ]}
-          />
-
-          <Experience
-            role="Software Quality Assurance Engineer"
-            company="Ismail Industries Pvt Ltd, Karachi, PK"
-            duration="10/2020 – 09/2021"
-            points={[
-              "Coordinated 3 major product releases under tight deadlines.",
-              "Reduced critical production issues by 25% through risk assessments.",
-              "Performed deep-dive debugging and failure forecasting.",
-            ]}
-          />
-
-          <Experience
-            role="Junior Software QA Engineer"
-            company="Crescentic Digital Pvt Ltd, Karachi, PK"
-            duration="11/2019 – 09/2020"
-            points={[
-              "Introduced Pre-understanding Sessions, reducing dev-test cycles by 30%.",
-              "Implemented JMeter testing improving response time by 30%.",
-            ]}
-          />
-        </section>
-
-        {/* Education */}
-        <section style={{ marginBottom: "50px" }}>
-          <h2 style={sectionTitle}>Education</h2>
-          <p style={paragraph}>
-            <strong>M.Sc. Artificial Intelligence</strong> (2025 – Present)<br />
-            Brandenburg University of Technology (BTU), Germany
-          </p>
-          <p style={paragraph}>
-            <strong>B.S. Software Engineering</strong> (2015 – 2019)<br />
-            Indus University, Karachi — <em>Gold Medalist</em>
-          </p>
-        </section>
-
-        {/* Skills */}
-        <section style={{ marginBottom: "50px" }}>
-          <h2 style={sectionTitle}>Technical Skills</h2>
-          <ul style={list}>
-            <li>Automation & Testing: Selenium, Cucumber, Appium, Robot Framework, JMeter</li>
-            <li>CI/CD & Tools: Jenkins, Postman, Git, Jira, Tricentis Tosca</li>
-            <li>Programming: Java, JavaScript, Python, C/C++, SQL, PHP</li>
-            <li>Databases: MongoDB, PostgreSQL</li>
-            <li>Automotive/Embedded: CANoe, CANalyzer, Ethernet/CAN/LIN</li>
-            <li>OS: Linux, Windows, Shell Scripting</li>
-          </ul>
-        </section>
-
-        {/* Certifications */}
-        <section>
-          <h2 style={sectionTitle}>Certifications & Languages</h2>
-          <p style={paragraph}>
-            <strong>Certifications:</strong> JMeter & API Automation, Selenium UI Framework (Level 1)
-          </p>
-          <p style={paragraph}>
-            <strong>Languages:</strong> English (Fluent), German (A2)
-          </p>
-        </section>
-      </section>
-    </main>
-  );
-}
-
-function Experience({ role, company, duration, points }) {
-  return (
-    <div style={{ marginBottom: "30px" }}>
-      <h3 style={{ marginBottom: "5px" }}>{role}</h3>
-      <p style={{ color: "#93c5fd", fontSize: "14px" }}>
-        {company} | {duration}
+    {/* Top Header */}
+    <header style={headerStyle}>
+      <div style={statusBadge}>
+        <span style={dot}></span> Available for new opportunities
+      </div>
+      <h1 style={mainTitle}>Sufyan Khalid</h1>
+      <p style={subTitle}>
+        Senior Software QA Engineer & M.Sc. AI Student at <span style={whiteText}>BTU Cottbus, Germany</span>
       </p>
-      <ul style={list}>
-        {points.map((p, i) => (
-          <li key={i}>{p}</li>
-        ))}
-      </ul>
+      
+      <div style={socialLinks}>
+        <a href="[https://linkedin.com/in/sufyan-khalid-b12322188](https://linkedin.com/in/sufyan-khalid-b12322188)" target="_blank" rel="noreferrer" style={linkStyle}>LinkedIn</a>
+        <span style={separator}>/</span>
+        <a href="[https://github.com/EngrSufyankhalid](https://github.com/EngrSufyankhalid)" target="_blank" rel="noreferrer" style={linkStyle}>GitHub</a>
+      </div>
+    </header>
+
+    {/* About Section */}
+    <section style={sectionMargin}>
+      <h2 style={sectionLabel}>01 // ABOUT</h2>
+      <p style={aboutText}>
+        Result-driven Senior QA Engineer with 5+ years of experience in test automation. 
+        Currently specializing in <span style={whiteText}>Artificial Intelligence</span> to bridge the gap 
+        between traditional QA and AI-driven automation.
+      </p>
+    </section>
+
+    {/* Experience Section */}
+    <section style={sectionMargin}>
+      <h2 style={sectionLabel}>02 // EXPERIENCE</h2>
+      
+      <ExperienceItem 
+        role="Senior Software QA Engineer"
+        company="Bykea Technologies"
+        date="2021 — 2025"
+        desc="Spearheaded testing for 20+ major launches. Reduced feature shipping time by 50% via CI/CD pipelines."
+      />
+
+      <ExperienceItem 
+        role="Software QA Engineer"
+        company="Ismail Industries"
+        date="2020 — 2021"
+        desc="Reduced critical production issues by 25% through risk assessments and failure forecasting."
+      />
+
+      <ExperienceItem 
+        role="Junior Software QA Engineer"
+        company="Crescentic Digital"
+        date="2019 — 2020"
+        desc="Introduced Pre-understanding Sessions, reducing dev-test cycles by 30%."
+      />
+    </section>
+
+    {/* Stack & Education Grid */}
+    <div style={gridStyle}>
+      <section>
+        <h2 style={sectionLabel}>03 // STACK</h2>
+        <div style={skillsWrapper}>
+          {['Selenium', 'Appium', 'Python', 'Java', 'Jenkins', 'JMeter', 'AI Testing', 'CI/CD'].map(skill => (
+            <span key={skill} style={skillTag}>{skill}</span>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 style={sectionLabel}>04 // EDUCATION</h2>
+        <div style={cardStyle}>
+          <h4 style={cardTitle}>M.Sc. Artificial Intelligence</h4>
+          <p style={cardSub}>BTU Cottbus, Germany</p>
+          <p style={dateText}>2025 — Present</p>
+        </div>
+      </section>
     </div>
-  );
-}
 
-const sectionTitle = {
-  fontSize: "24px",
-  borderBottom: "1px solid #1e293b",
-  paddingBottom: "10px",
-  marginBottom: "20px",
-};
+    {/* Footer */}
+    <footer style={footerStyle}>
+      <p>© 2026 Sufyan Khalid</p>
+      <p style={{opacity: 0.5}}>Cottbus, Brandenburg, Germany</p>
+    </footer>
 
-const paragraph = {
-  color: "#d1d5db",
-  lineHeight: 1.7,
-};
+  </div>
+</div>
+); }
 
-const list = {
-  paddingLeft: "20px",
-  color: "#d1d5db",
-};
+function ExperienceItem({ role, company, date, desc }) { return ( <div style={{ marginBottom: '40px' }}> <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}> <h3 style={{ color: '#ffffff', fontSize: '18px', margin: '0', fontWeight: '600' }}>{role}</h3> <span style={{ fontSize: '14px', opacity: 0.4 }}>{date}</span> </div> <p style={{ color: '#3b82f6', fontSize: '14px', margin: '4px 0 12px 0' }}>{company}</p> <p style={{ fontSize: '15px', color: '#a1a1aa', margin: 0 }}>{desc}</p> </div> ); }
+
+const containerStyle = { backgroundColor: '#000000', color: '#a1a1aa', minHeight: '100vh', fontFamily: 'Inter, system-ui, sans-serif', padding: '80px 20px', lineHeight: '1.6', };
+
+const contentWrapper = { maxWidth: '700px', margin: '0 auto', };
+
+const headerStyle = { marginBottom: '80px', };
+
+const statusBadge = { display: 'inline-flex', alignItems: 'center', fontSize: '12px', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.1)', padding: '4px 12px', borderRadius: '20px', marginBottom: '24px', };
+
+const dot = { width: '6px', height: '6px', backgroundColor: '#22c55e', borderRadius: '50%', marginRight: '8px', display: 'inline-block', };
+
+const mainTitle = { fontSize: '48px', color: '#ffffff', fontWeight: '700', letterSpacing: '-1.5px', margin: '0 0 16px 0', };
+
+const subTitle = { fontSize: '18px', marginBottom: '24px', };
+
+const whiteText = { color: '#ffffff', fontWeight: '500', };
+
+const socialLinks = { display: 'flex', gap: '12px', fontSize: '14px', };
+
+const linkStyle = { color: '#ffffff', textDecoration: 'none', borderBottom: '1px solid #3f3f46', };
+
+const separator = { opacity: 0.3, };
+
+const sectionLabel = { fontSize: '11px', letterSpacing: '2px', color: '#52525b', marginBottom: '24px', };
+
+const sectionMargin = { marginBottom: '80px', };
+
+const aboutText = { fontSize: '20px', color: '#d4d4d8', };
+
+const gridStyle = { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginBottom: '80px', };
+
+const cardStyle = { border: '1px solid #18181b', padding: '20px', borderRadius: '12px', backgroundColor: '#09090b', };
+
+const cardTitle = { color: '#ffffff', margin: '0 0 4px 0', fontSize: '16px', };
+
+const cardSub = { fontSize: '14px', margin: '0', };
+
+const dateText = { fontSize: '12px', marginTop: '10px', opacity: 0.4, };
+
+const skillsWrapper = { display: 'flex', flexWrap: 'wrap', gap: '8px', };
+
+const skillTag = { backgroundColor: '#18181b', color: '#ffffff', padding: '6px 12px', borderRadius: '6px', fontSize: '13px', border: '1px solid #27272a', };
+
+const footerStyle = { paddingTop: '40px', borderTop: '1px solid #18181b', display: 'flex', justifyContent: 'space-between', fontSize: '13px', };
