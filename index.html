@@ -59,6 +59,7 @@
                 <div class="ml-10 flex items-baseline space-x-8">
                     <a href="#about" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
                     <a href="#experience" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                    <a href="#projects" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
                     <a href="#education" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Education</a>
                     <a href="#skills" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
                     <a href="#contact" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
@@ -76,6 +77,7 @@
     <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-white/10 px-4 py-4 space-y-2">
         <a href="#about" class="block hover:text-primary py-2">About</a>
         <a href="#experience" class="block hover:text-primary py-2">Experience</a>
+        <a href="#projects" class="block hover:text-primary py-2">Projects</a>
         <a href="#education" class="block hover:text-primary py-2">Education</a>
         <a href="#skills" class="block hover:text-primary py-2">Skills</a>
         <a href="#contact" class="block hover:text-primary py-2">Contact</a>
@@ -209,140 +211,213 @@
         </div>
     </section>
 
-    <section id="education" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- NEW PROJECTS SECTION -->
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
-            <i data-lucide="graduation-cap" class="text-primary"></i> Education
+            <i data-lucide="folder-git-2" class="text-primary"></i> Featured AI Projects
         </h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="glass-card p-6 rounded-xl border-l-4 border-primary">
-                <h3 class="text-lg font-bold text-white">Master of Science: Artificial Intelligence</h3>
-                <p class="text-secondary mt-1">Brandenburg University of Technology (BTU), Germany</p>
-                <div class="flex items-center gap-2 mt-4 text-sm text-primary">
-                    <i data-lucide="calendar" class="w-4 h-4"></i> 05/2025 – Present
-                </div>
-                <p class="text-xs text-secondary mt-2 italic">Focus: ML Systems, Mathematical Data Science</p>
-            </div>
-            <div class="glass-card p-6 rounded-xl border-l-4 border-gray-600">
-                <h3 class="text-lg font-bold text-white">Bachelor of Science: Software Engineering</h3>
-                <p class="text-secondary mt-1">Indus University, Karachi, Pakistan</p>
-                <div class="flex items-center gap-2 mt-4 text-sm text-primary">
-                    <i data-lucide="calendar" class="w-4 h-4"></i> 2015 – 2019
-                </div>
-                <p class="text-xs text-secondary mt-2 italic">Award: Gold Medalist (1st Rank) for Academic Excellence</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-20 bg-surface/30">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
-                <i data-lucide="cpu" class="text-primary"></i> Technical Skills
-            </h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-background p-6 rounded-xl border border-white/10">
-                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                        <i data-lucide="brain-circuit" class="text-primary w-5 h-5"></i> AI & ML Frameworks
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">PyTorch</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">LangGraph</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Scikit-learn</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">LLM Evaluation</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Ragas</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">NLP</span>
-                    </div>
-                </div>
-
-                <div class="bg-background p-6 rounded-xl border border-white/10">
-                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                        <i data-lucide="database" class="text-primary w-5 h-5"></i> Data QA & MLOps
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Pipeline Auditing</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Edge Case Detection</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Docker</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">CI/CD</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Automated Testing</span>
-                    </div>
-                </div>
-
-                <div class="bg-background p-6 rounded-xl border border-white/10">
-                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                        <i data-lucide="code-2" class="text-primary w-5 h-5"></i> Programming & DB
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Python (FastAPI)</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">SQL</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Java</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Spark</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Databricks</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">PostgreSQL</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">ChromaDB</span>
-                    </div>
-                </div>
-
-                <div class="bg-background p-6 rounded-xl border border-white/10">
-                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                        <i data-lucide="flask-conical" class="text-primary w-5 h-5"></i> Quality Assurance
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Selenium</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">JMeter</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">API Automation</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Variance Analysis</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Jira</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary">Agile (Scrum)</span>
-                    </div>
-                </div>
-
-                <div class="bg-background p-6 rounded-xl border border-white/10">
-                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                        <i data-lucide="award" class="text-primary w-5 h-5"></i> Certifications
-                    </h3>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-2 text-secondary text-sm">
-                            <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i> JMeter & API Automation
+            <div class="glass-card p-6 rounded-xl hover:border-primary/50 transition-all flex flex-col h-full group">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                            <i data-lucide="database-zap" class="w-5 h-5"></i>
                         </div>
-                        <div class="flex items-center gap-2 text-secondary text-sm">
-                            <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i> UI with Selenium Framework (L1)
-                        </div>
+                        <span class="text-xs font-medium px-2 py-1 bg-white/5 text-secondary rounded-full">Academic</span>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Enterprise Text-to-SQL & Financial RAG</h3>
+                    <p class="text-secondary text-sm leading-relaxed">
+                        Engineered a hybrid LangGraph agent routing complex queries between dynamic SQL databases (350+ columns) and RAG architecture. Implemented "LLM-as-a-Judge" pipeline via Arize Phoenix to minimize hallucinations and enforce JSON schema validity.
+                    </p>
                 </div>
+                <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 bg-primary/20 text-primary rounded-md">LangGraph</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">OpenAI API</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">Arize Phoenix</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">FastAPI</span>
+                </div>
+            </div>
 
-                <div class="bg-background p-6 rounded-xl border border-white/10">
-                    <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                        <i data-lucide="languages" class="text-primary w-5 h-5"></i> Languages
-                    </h3>
-                    <div class="space-y-3">
-                        <div>
-                            <div class="flex justify-between text-sm text-secondary mb-1">
-                                <span>English</span>
-                                <span>Fluent/Professional</span>
-                            </div>
-                            <div class="w-full bg-white/10 rounded-full h-2">
-                                <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
-                            </div>
+            <div class="glass-card p-6 rounded-xl hover:border-primary/50 transition-all flex flex-col h-full group">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                            <i data-lucide="network" class="w-5 h-5"></i>
                         </div>
-                        <div>
-                            <div class="flex justify-between text-sm text-secondary mb-1">
-                                <span>German</span>
-                                <span>A2 (Actively Improving)</span>
-                            </div>
-                            <div class="w-full bg-white/10 rounded-full h-2">
-                                <div class="bg-primary h-2 rounded-full" style="width: 35%"></div>
-                            </div>
-                        </div>
+                        <span class="text-xs font-medium px-2 py-1 bg-white/5 text-secondary rounded-full">Research</span>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Agentic AI Workflow Orchestrator</h3>
+                    <p class="text-secondary text-sm leading-relaxed">
+                        Built and tested a multi-agent system using LangGraph for autonomous workflow orchestration and API integration. Integrated Human-in-the-Loop QA evaluators and feedback systems, effectively reducing AI planning time by 30%.
+                    </p>
                 </div>
+                <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 bg-purple-500/20 text-purple-400 rounded-md">LangChain</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">GPT-4</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">Ragas</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">ChromaDB</span>
+                </div>
+            </div>
 
+            <div class="glass-card p-6 rounded-xl hover:border-primary/50 transition-all flex flex-col h-full group">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-pink-500/10 flex items-center justify-center text-pink-500 group-hover:scale-110 transition-transform">
+                            <i data-lucide="search-check" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xs font-medium px-2 py-1 bg-white/5 text-secondary rounded-full">Academic</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hybrid Search Recommendation System</h3>
+                    <p class="text-secondary text-sm leading-relaxed">
+                        Developed a highly accurate Hybrid Search engine combining Vector Embeddings (FAISS) and sparse retrieval (BM25). Validated model efficiency by optimizing latency through embedding quantization and caching mechanisms.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 bg-pink-500/20 text-pink-400 rounded-md">PyTorch</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">FAISS</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">HuggingFace</span>
+                    <span class="text-xs px-2 py-1 bg-white/5 text-secondary rounded-md">Redis</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-surface/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+                <i data-lucide="graduation-cap" class="text-primary"></i> Education
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-xl border-l-4 border-primary">
+                    <h3 class="text-lg font-bold text-white">Master of Science: Artificial Intelligence</h3>
+                    <p class="text-secondary mt-1">Brandenburg University of Technology (BTU), Germany</p>
+                    <div class="flex items-center gap-2 mt-4 text-sm text-primary">
+                        <i data-lucide="calendar" class="w-4 h-4"></i> 05/2025 – Present
+                    </div>
+                    <p class="text-xs text-secondary mt-2 italic">Focus: ML Systems, Mathematical Data Science</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl border-l-4 border-gray-600">
+                    <h3 class="text-lg font-bold text-white">Bachelor of Science: Software Engineering</h3>
+                    <p class="text-secondary mt-1">Indus University, Karachi, Pakistan</p>
+                    <div class="flex items-center gap-2 mt-4 text-sm text-primary">
+                        <i data-lucide="calendar" class="w-4 h-4"></i> 2015 – 2019
+                    </div>
+                    <p class="text-xs text-secondary mt-2 italic">Award: Gold Medalist (1st Rank) for Academic Excellence</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 px-4 max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-start">
+    <section id="skills" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+            <i data-lucide="cpu" class="text-primary"></i> Technical Skills
+        </h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-surface/50 p-6 rounded-xl border border-white/10 glass-card">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="brain-circuit" class="text-primary w-5 h-5"></i> AI & ML Frameworks
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">PyTorch</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">LangGraph</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Scikit-learn</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">LLM Evaluation</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Ragas</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">NLP</span>
+                </div>
+            </div>
+
+            <div class="bg-surface/50 p-6 rounded-xl border border-white/10 glass-card">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="database" class="text-primary w-5 h-5"></i> Data QA & MLOps
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Pipeline Auditing</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Edge Case Detection</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Docker</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">CI/CD</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Automated Testing</span>
+                </div>
+            </div>
+
+            <div class="bg-surface/50 p-6 rounded-xl border border-white/10 glass-card">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="code-2" class="text-primary w-5 h-5"></i> Programming & DB
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Python (FastAPI)</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">SQL</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Java</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Spark</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Databricks</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="bg-surface/50 p-6 rounded-xl border border-white/10 glass-card">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="flask-conical" class="text-primary w-5 h-5"></i> Quality Assurance
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Selenium</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">JMeter</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">API Automation</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Variance Analysis</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Jira</span>
+                    <span class="px-3 py-1 bg-white/5 rounded-md text-sm text-secondary border border-white/5">Agile (Scrum)</span>
+                </div>
+            </div>
+
+            <div class="bg-surface/50 p-6 rounded-xl border border-white/10 glass-card">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="award" class="text-primary w-5 h-5"></i> Certifications
+                </h3>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-2 text-secondary text-sm">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i> JMeter & API Automation
+                    </div>
+                    <div class="flex items-center gap-2 text-secondary text-sm">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i> UI with Selenium Framework (L1)
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-surface/50 p-6 rounded-xl border border-white/10 glass-card">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="languages" class="text-primary w-5 h-5"></i> Languages
+                </h3>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between text-sm text-secondary mb-1">
+                            <span>English</span>
+                            <span>Fluent/Professional</span>
+                        </div>
+                        <div class="w-full bg-white/10 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm text-secondary mb-1">
+                            <span>German</span>
+                            <span>A2 (Actively Improving)</span>
+                        </div>
+                        <div class="w-full bg-white/10 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-4 bg-surface/30">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
             
             <div class="space-y-8 pt-8">
                 <h2 class="text-4xl md:text-5xl font-bold tracking-tight">
